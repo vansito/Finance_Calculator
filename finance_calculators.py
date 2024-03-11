@@ -28,7 +28,7 @@ print("investment - to calculate the amount of interest you'll ear on your inves
 print("bond \t - to calculate the amount you'll have to pay on a home loan")
 print()
 
-investment = input("Please enter 'investment' or 'bond' from the menu above: \t")
+investment = input("Please enter 'investment' or 'bond' from the menu above: ")
 investment = investment.lower()
 
 print()
@@ -40,8 +40,7 @@ if investment == "investment":
 
     print()
 
-    rate = int(input("Please enter the interest rate:\t"))
-    rate = rate / 100
+    rate = int(input("Please enter the interest rate: ")) / 100
 
     print()
 
@@ -69,9 +68,7 @@ elif investment == "bond":
 
     print()
 
-    rate = int(input("Please enter the interest rate:\t"))
-    rate = rate / 100
-    rate = rate / 12
+    rate = (int(input("Please enter the interest rate:\t")) / 100) / 12
 
     print()
 
